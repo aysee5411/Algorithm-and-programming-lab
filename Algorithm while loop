@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int a = 10;
+	while (a > 0) {
+		printf("I have %d apple\n", a);
+		a--;
+	}
+	printf("I have no apple");
+	return 0;
+}
