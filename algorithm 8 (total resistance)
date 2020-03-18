@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	float r1, r2, r3;
+	printf("enter the resistance values r1 and r2:\n");
+	
+	if(scanf("%f%f", &r1, &r2)!=2)
+	{
+	printf("data entered correctly... bye!!!");
+	exit(0);
+}
+	if (r1 != 0)
+	{
+		if (r2 != 0)
+		{
+			r3 = 1.0 / r1 + 1.0 / r2;
+			printf("total resistance=%.1f ohm\n", 1.0 / r3);
+		}
+		else
+			printf("r2 is short circuit\n");
+
+	}
+	else
+		printf("r1 is shor circuit\n");
+	return 0;
+}
