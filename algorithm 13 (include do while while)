@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int response, i;
+	float x, next, e;
+	do
+	{
+		next = 1.0;
+		e = 1.0;
+		i = 1;
+		printf("enter a value for x:\n");
+		scanf("%f", &x);
+		while (i < 100)
+		{
+			next = x / i * next;
+			e = e + next;
+			i++;
+		}
+		printf("e raised to power %f=%f\n", x, e);
+		printf("do you wish to try another ([1=yes, 0=no] ?:\n");
+		scanf("%d", &response);
+	}
+	while(response == 1);
+	
+	return 0;
+}
