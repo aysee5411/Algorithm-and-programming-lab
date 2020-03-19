@@ -1,0 +1,19 @@
+#include <stdlib.h>
+#define size 5
+int main(void)
+{
+	int i;
+	float v, n[size];
+	for(i = 0; i < size; i++)
+	{
+		printf("enter number %d\n", i);
+		scanf("%f" ,&n[i]);
+	}
+	for (i = 0; i < size; i++)
+	{
+		v = n[i];
+		printf("%1.3f %1.3f %1.3f \n", v, v * v, v * v * v);
+	}
+	
+	return 0;
+}
