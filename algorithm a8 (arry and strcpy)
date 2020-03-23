@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	char arr1[] = "ayshe";
+	char arr2[] = "uyanik";
+	char result[100];
+	strcpy(result, arr1);
+	strncpy(result, arr2, 3);
+	printf("%s", result);
+	return 0;
+}
