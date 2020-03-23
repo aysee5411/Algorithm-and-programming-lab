@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	char gumawo[100];
+	strcpy(gumawo, "i ");
+	strcat(gumawo, "like ");
+	strcat(gumawo, "him ");
+	strcat(gumawo, "smile=)");
+	printf("%s", gumawo);
+	
+	return 0;
+}
