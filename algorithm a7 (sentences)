@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	int b;
+	char smile[100];
+	char gumawo[100];
+	printf("please enter a sentence\n");
+	scanf("%s",&smile);
+	printf("%s\n", smile);
+	printf("please enter another sentence\n");
+	scanf("%s",&gumawo);
+	printf("how many char you want to add end of first sentence:\n");
+	scanf("%d",&b);
+	printf("first sentence: %s\n", smile);
+	printf("seccod sentence :%s\n", gumawo);
+	strncat(smile, gumawo, b);
+	printf("%s", smile);
+
+	return 0;
+}
